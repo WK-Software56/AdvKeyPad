@@ -2,7 +2,7 @@
 Arduino advanced Keypad-Library for 4x4 Keypads with PCF8574 I2C Interface
 ## Description
 The Advanced KeyPad Library is used to connect a 4x4 Kepad by using a PFC8574 I2C-Interface.
-The Prtogramming Interface is based on the I2CKeyPad library by Rob Tillaart, but with a complete
+The Programming Interface is based on the I2CKeyPad library by Rob Tillaart, but with a complete
 new Key-Scanning Module.
 The goal for this Library was to handle the KeyPad like a normal Keyboard including debounce and repeating keys.
 
