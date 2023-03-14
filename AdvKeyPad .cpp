@@ -1,7 +1,7 @@
 //
 //    FILE: AdvKeyPad.cpp
 //  AUTHOR: Walter Kvapil
-// VERSION: 0.1.0
+// VERSION: 1.0.0
 // PURPOSE: Arduino advanced keypad library for 4x4 KeyPad with PCF8574 I2C-Adapter
 //     URL: https://github.com/WK-Software56/AdvKeyPad
 //
