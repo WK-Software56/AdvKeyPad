@@ -1,0 +1,4 @@
+- name: arduino_ci
+  # You may pin to the exact commit or the version.
+  # uses: Arduino-CI/action@2674f4823db04862cee384017e8dbe6f0c535924
+  uses: Arduino-CI/action@v0.1.5
