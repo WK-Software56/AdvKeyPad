@@ -1,0 +1,23 @@
+{
+  "name": "AdvKeyPad",
+  "keywords": "I2C, KeyPad, PCF8574, debounce",
+  "description": "Arduino library for a KeyPad connected to a PCF8574.",
+  "authors":
+  [
+    {
+      "name": "Walter Kvapil",
+      "email": "walter@kvapil.at",
+      "maintainer": true
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/WK-Software56/AdvKeyPad.git"
+  },
+  "version": "0.1.0",
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "headers": "AdvKeyPad.h"
+}
