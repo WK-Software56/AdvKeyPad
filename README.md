@@ -1,5 +1,5 @@
 [![Arduino CI](https://github.com/WK-Software56/AdvKeyPad/workflows/Arduino_CI/badge.svg)](https://github.com/marketplace/actions/arduino_ci)
-[![Arduino-lint-action](https://github.com/WK-Software56/AdvKeyPad/actions/workflows/arduino-lint-action.yml/badge.svg)](https://github.com/WK-Software56/AdvKeyPad/.github/workflows/arduino-lint-action.yml)
+[![arduino-lint-action](https://github.com/WK-Software56/AdvKeyPad/actions/workflows/arduino-lint-action.yml/badge.svg)](https://github.com/WK-Software56/AdvKeyPad/.github/workflows/arduino-lint-action.yml)
 # AdvKeyPad
 Arduino advanced Keypad-Library for 4x4 Keypads with PCF8574 I2C Interface
 ## Description
