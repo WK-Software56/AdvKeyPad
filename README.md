@@ -42,11 +42,6 @@ The PCF8574 is connected between the processor and the 4x4 keypad. See the conce
     bool loadKeyMap(char * keyMap) keyMap should point to a (global) char array of length 19. 
       This array maps index 0..15 on a char and index [16] maps to I2CKEYPAD_NOKEY (typical 'N') and index [17] maps I2CKEYPAD_FAIL (typical 'F'). index 18 is the null char.
 
-WARNING If there is no key map loaded the user should NOT call getChar() or getLastChar() as these would return meaningless bytes.
-char normal_keymap[19]  = "123A456B789C*0#DNF";   // typical normal key map (phone layout)
-Note: a keyMap char array may be longer than 18 characters, but only the first 18 are used. The length is NOT checked upon loading.
-Basic working
-
 After the keypad.begin() the sketch calls the keyPad.getKey() to read values from the keypad.
 
     If no key is pressed KP__NOKEY code (16) is returned.
