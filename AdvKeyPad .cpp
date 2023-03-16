@@ -81,7 +81,7 @@ uint8_t AdvKeyPad::getLastChar()
 
 void AdvKeyPad::loadKeyMap(char * keyMap)
 {
-  _keyMap = keyMap;
+  strcpy(_keyMap, keyMap);
 }
 
 void AdvKeyPad::setKeyPadDebounce(uint8_t debtime)
@@ -103,7 +103,7 @@ void AdvKeyPad::setKeyPadRepeat(int delay, int repeat)
   }
 }
 
-void AdvKeyPad::setKeyPadShift(uint8_t key, uint8_t offset)
+void AdvKeyPad::setKeyPadShift(uint8_t key, uint8_t offset)  // Experimental for future releases
 {
   _status[key]|=KP_ISSHIFT;
   _shiftOffset[key]=offset;

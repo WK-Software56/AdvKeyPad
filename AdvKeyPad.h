@@ -2,7 +2,7 @@
 //
 //    FILE: AdvKeyPad.h
 //  AUTHOR: Walter Kvapil
-// VERSION: 1.0.0
+// VERSION: 1.0.1
 // PURPOSE: Arduino advanced keypad library for 4x4 KeyPad with PCF8574 I2C-Adapter
 //     URL: https://github.com/WK-Software56/AdvKeyPad
 
@@ -11,7 +11,7 @@
 #include "Wire.h"
 
 
-#define KP__LIB_VERSION    (F("1.0.0"))
+#define KP__LIB_VERSION    (F("1.0.1"))
 
 #define KP__NOKEY          16
 #define KP__FAIL           17
@@ -28,7 +28,7 @@
 #define KP__REVERSE			true
 
 
-#define FIFO_BUFSIZE		10
+#define FIFO_BUFSIZE		20
 
 class AdvKeyPad
 {
@@ -56,7 +56,7 @@ public:
   void	  setKeyPadDebounce(uint8_t debtime);
   uint8_t getKeyPadDebounce();
   void	  setKeyPadRepeat(int delay, int repeat);
-  void	  setKeyPadShift(uint8_t key, uint8_t offset);
+  void	  setKeyPadShift(uint8_t key, uint8_t offset);  // Experimental for future releases
 
 protected:
   uint8_t _i2cAddr;
@@ -79,6 +79,6 @@ protected:
   bool _fifo_isempty();
 
   TwoWire* _wire;
-  char *  _keyMap = NULL;
+  char _keyMap[19] = "123A456B789C*0#DNF";
 };
 // -- END OF FILE --
